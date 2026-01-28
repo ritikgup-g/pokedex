@@ -3,4 +3,6 @@ Create a responsive frontend only poke dex . We need to fetch the data from an e
 
 instructions
 to search about any pokemon enter its name or number on search window and then click on search button.
+to signin click on the profile logo on left side and submit your details.
+to open other sites of pokemon website click on the images at uppermost part .
 
