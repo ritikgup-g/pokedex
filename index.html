@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pokedex2
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body><header>
+    <section class="tray">
+        <a href="https://www.pokemon.com/us/">
+            <img src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png" height="66"
+                alt="pokemon logo">
+        </a>
+        <a href="https://www.pokemoncenter.com/?utm_source=p&utm_medium=referral&utm_term=GUS">
+
+            <img src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemoncenter-79x45.png "
+                height="66px">
+        </a>
+        <a href="https://corporate.pokemon.com/en-us/">
+            <img src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/corporate-en.png" height="66px"
+                alt="pokemon center logo">
+        </a>
+        <a href="https://tcg.pokemon.com/en-us/">
+            <img src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/tcg-175-en.png " height="66px"
+                alt="pokemon tcg logo">
+        </a>
+        <a href="https://legends.pokemon.com/en-us">
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/misc/gus/promotions/pokemon-legends-z-a-176x50-en.png"
+                height="66px" alt="pokemon legends z-a logo">
+        </a>
+        <a href="https://community.pokemon.com/en-us/">
+            <img src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/community-forums-175x50-en.png"
+                height="66px" alt="pokemon community forums logo">
+        </a>
+    </section>
+
+    <section class="main-content">
+        <h3 class="headline">Pokedex</h3>
+        <div class="search-section">
+            <div class="search-header">
+                <p id="first">Name or Number</p>
+                <p id="second">Search for a Pokémon by name or using its National Pokédex number.</p>
+            </div>
+            <div class="search-controls">
+                <input type="text" id="my-input" placeholder="Name or Number">
+                <button class="search">search</button>
+            </div>
+            <div id="search-result"></div>
+            <p id="third">Use the advanced search to explore Pokémon by type, abilities, and more!.</p>
+        </div>
+        <br/>
+    </section>
+    <section class="list" >
+       <div id="pokemon-container"></div>
+
+    </section>
+
+        <img  class="signin" src="data:image/png;base64,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"
+            height="100px" width="80px">
+
+    <a class="magnifier" href="home.js">
+        <img src="https://imgs.search.brave.com/4__RwUUqkWOiKxLr4WqdZog7lGRV8lDU-Him8FBcT70/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvY29sb3ItaWNv/bi1zZXQtMS81MTIv/Y29sb3Jfc2VhcmNo/LTEyOC5wbmc"
+            height="80px" width="50px"></a>
+     
+
+    </header>
+
+    <footer>
+        <form class="signup-form">
+            <h3 id="email">Sign Up for Pokemon Emails!</h3>
+            <div class="form-group">
+                <input type="text" class="email" placeholder="Email">
+            </div>
+            <div class="form-group inline">
+                <input type="text" class="country" placeholder="Country">
+                <input type="text" class="phoneno." placeholder="Phone Number">
+            </div>
+            <button class="signup">Sign Up</button>
+        </form>
+        <p id="copyright">© 2024 Pokémon. © 1995–2024 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character
+            names are trademarks of Nintendo.</p>
+    </footer>
+     
+    
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

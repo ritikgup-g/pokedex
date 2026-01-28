@@ -1,0 +1,208 @@
+body {
+    background-color: rgb(45, 44, 44);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.tray {
+    text-align: center;
+    background-color: #f0f0f0;
+    width: 100%;
+
+}
+.tray img{
+    border:0.0001px solid black;
+}
+.tray img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.search-section {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#first {
+    font-size: 24px;
+    margin: 0;
+}
+
+#second {
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.search-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#my-input {
+    
+    height: 40px;
+    width: 510px;
+    padding:5px;
+    font-size: 16px;
+}
+
+.search-section button.search {
+    background-color: orange;
+    position:relative;
+    top: 50%;
+    left:3%;
+    height: 53px;
+    width: 100px;
+    margin:0;
+    border: none;
+    cursor: pointer;
+}
+
+#third {
+    font-size: 14px;
+    margin: 0;
+    color: #ccc;
+}
+
+footer {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#fifth {
+    margin: 0;
+}
+
+button.signup {
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#fourth {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    width: 90%;
+}
+.signin{
+    position:fixed;
+    top:41%;
+    left:0;
+    width:50px;
+    height:80px;
+}
+.magnifier{
+    position:fixed;
+    top:52%;
+    left:0;
+    
+    background-color:white;
+    text-align:left;
+}
+
+#pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  color:black;
+}
+
+.pokemon-card {
+  padding: 15px;
+  border-radius: 10px;
+  background:black;
+  text-align: center;
+  color:white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pokemon-card.active {
+  border: 3px solid black;
+  background:cyan;
+  color:black;
+}
+
+.pokemon-card img {
+  width: 120px;
+  color:black;
+}
+.headline {
+  display: inline-block;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+/* .headline:hover {
+  background-color:;
+} */
